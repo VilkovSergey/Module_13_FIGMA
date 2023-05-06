@@ -43,6 +43,7 @@ body {
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 21px;
+  letter-spacing: 0.02em;
 }
 .text_p {
   font-family: 'Open Sans', sans-serif;
@@ -117,6 +118,12 @@ font-family: 'Oswald', sans-serif; */
   max-width: 734px;
   margin: 0 auto;
 }
+@media screen and (max-width: 380px) {
+  .main__title_h1 {
+    font-size: 46px;
+    line-height: 64px;
+  }
+}
 /* End Header */
 /* --------------------------------------------- */
 /* Start section */
@@ -184,6 +191,7 @@ font-family: 'Oswald', sans-serif; */
 @media screen and (max-width: 768px) {
   .info {
     position: relative;
+    padding: 30px 0;
   }
   .about__grid {
     grid-template-columns: repeat(1, 1fr);
@@ -223,7 +231,6 @@ font-family: 'Oswald', sans-serif; */
 @media screen and (max-width: 1280px) {
   .about {
     padding: 400px 15px 110px 15px;
-    
   }
   
 }
@@ -302,3 +309,59 @@ Start section_request */
   }
 }
 /* End section_request */
+/* ------------------------------------------------------
+  Start section_services */
+
+.services {
+  padding: 150px 0 177px;
+}
+.section__h2, .services__h4 {
+  color: #000;
+  text-align: center;
+}
+.section__h2 {
+  margin-bottom: 50px;
+}
+.services__h4 {
+  margin: 0 auto;
+  text-transform: uppercase;
+  max-width: 172px;
+}
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+.services__grid_item {
+  padding: 59px 92px 59px 86px;
+  width: 350px;
+  height: 250px;
+  background-color: #F7F7F7;
+}
+.services__icon {
+  margin: 0 auto 29px;
+}
+@media screen and (max-width: 1280px) {
+  .services {
+    padding: 0 15px;
+  }
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .services__grid_item {
+    width: 100%;
+  }
+  .section__h2 {
+    padding-top: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* End section - services */
+/* ----------------------------------------------------- */
