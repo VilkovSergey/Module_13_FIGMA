@@ -366,8 +366,6 @@ Start section_request */
 /* End section - services */
 /* ----------------------------------------------------- */
 /* Start section - portfolio */
-.portfolio {
-}
 .portfolio__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
