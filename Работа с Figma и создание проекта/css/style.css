@@ -390,3 +390,48 @@ Start section_request */
 }
 /* End section - portfolio */
 /* --------------------------------------- */
+/* Start section - question */
+.question {
+  padding: 93px 0 110px;
+}
+.question .section__h2 {
+  margin-bottom: 50px;
+}
+.question__h3 {
+  text-transform: uppercase;
+  color: var(--accent_color);
+  line-height: 36px;
+  margin-bottom: 21px;
+}
+.question__h3.close {
+  margin-bottom: 33px;
+}
+.question_p {
+  margin-bottom: 40px;
+  max-width: 730px;
+  color: var(--gray_color);
+}
+.question__h3.open::before,
+.question__h3.close::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/arrow_icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 13px;
+}
+.question__h3.open::before {
+  transform: rotate(-90deg);
+}
+.question__h3.close + .question_p {
+  display: none;
+}
+@media screen and (max-width: 1280px) {
+  .question {
+    padding: 0 15px 110px;
+  }
+}
+/* End section- question */
+/* ----------------------------------------- */
