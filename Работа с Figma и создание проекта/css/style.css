@@ -421,6 +421,7 @@ Start section_request */
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 13px;
+  cursor: pointer;
 }
 .question__h3.open::before {
   transform: rotate(-90deg);
