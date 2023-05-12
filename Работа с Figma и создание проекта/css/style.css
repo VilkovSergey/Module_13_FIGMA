@@ -516,5 +516,71 @@ Start section_request */
 }
 /* End sections: reviews; request (перенос кода) */
 /* --------------------------------------------- */
-/* Start section - contacts */
+/* Start section - contacts; footer */
+.contacts {
+  padding: 100px 0 150px;
+}
+.contacts__h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.contacts__grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.contacts__item {
+  max-width: 255px;
+  text-align: center;
+}
+.contacts__icon {
+  width: 71px;
+  height: 29px;
+  margin: 0 auto 13px;
+}
+.contacts__h3 {
+  text-transform: uppercase;
+}
+.contacts__h3_gray {
+  color: var(--gray_color);
+  margin-bottom: 18px;
+}
+.contacts__h3_accent {
+  color: var(--accent_color);
+}
+@media screen and (max-width: 1280px) {
+  .contacts__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contacts__item {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* ---------------------------------------------- */
+.footer {
+  padding: 30px 0;
+  background-color: var(--dark_color);
+  color: #fff;
+}
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1280px) {
+  .footer {
+    padding: 30px 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__flex {
+    flex-direction: column;
+  }
+}
+/* End sections - contacts; footer */
+/* End project */
 
