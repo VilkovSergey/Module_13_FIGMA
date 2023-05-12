@@ -375,8 +375,8 @@ Start section_request */
   gap: 0;
 }
 .portfolio__img {
-  width: 500px;
-  height: 500px;
+  width: 480px;
+  height: 407px;
 }
 @media screen and (max-width: 1280px) {
   .portfolio__grid {
