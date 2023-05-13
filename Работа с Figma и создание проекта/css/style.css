@@ -529,6 +529,10 @@ Start section_request */
 .contacts__h3 {
   text-transform: uppercase;
 }
+.contacts__hone {
+  text-decoration: none;
+  color: inherit;
+}
 .contacts__h3_gray {
   color: var(--gray_color);
   margin-bottom: 18px;
