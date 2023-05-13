@@ -118,6 +118,11 @@ font-family: 'Oswald', sans-serif; */
   max-width: 734px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1280px) {
+  .header__title {
+    padding: 0 15px;
+  }
+}
 @media screen and (max-width: 380px) {
   .main__title_h1 {
     font-size: 46px;
@@ -198,6 +203,9 @@ font-family: 'Oswald', sans-serif; */
     grid-template-rows: repeat(4, 1fr);
   }
 }
+/* End section - about */
+/* ----------------------------------------------- */
+/* Start section - project */
 .project_h2 {
   text-align: center;
   margin-bottom: 50px;
@@ -251,7 +259,7 @@ font-family: 'Oswald', sans-serif; */
     margin-bottom: 0;
   }
 }
-/* End section */
+/* End section - project */
 /* -------------------------------------------
 Start section_request */
 .request {
@@ -402,32 +410,12 @@ Start section_request */
   color: var(--accent_color);
   line-height: 36px;
   margin-bottom: 21px;
-}
-.question__h3.close {
-  margin-bottom: 33px;
+  cursor: pointer;
 }
 .question_p {
   margin-bottom: 40px;
   max-width: 730px;
   color: var(--gray_color);
-}
-.question__h3.open::before,
-.question__h3.close::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-image: url(../img/arrow_icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 13px;
-  cursor: pointer;
-}
-.question__h3.open::before {
-  transform: rotate(-90deg);
-}
-.question__h3.close + .question_p {
-  display: none;
 }
 @media screen and (max-width: 1280px) {
   .question {
