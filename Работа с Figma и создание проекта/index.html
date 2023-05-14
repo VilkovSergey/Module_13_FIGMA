@@ -7,19 +7,34 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
   <link rel="stylesheet" href="css/style.css">
   <title>Site in the Figma</title>
 </head>
 <body>
+
+  <ul id="slide-out" class="sidenav">
+    <li><a href="#!"><i class="material-icons">home</i>Главная</a></li>
+    <li><a href="#!"><i class="material-icons">people</i>О нас</a></li>
+    <li><a href="#!"><i class="material-icons">grade</i>Услуги</a></li>
+    <li><a href="#!"><i class="material-icons">phone</i>Контакты</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="#!" class="sidenav-close"><i class="material-icons">close</i>Закрыть</a></li>
+  </ul>
+  <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+
   <header class="header">
-    <div class="container">
+    <div class="container_V">
       <div class="header__title">
         <img class="logo" src="img/logo.svg" alt="logo">
-        <button class="burger">
+        <a class="burger sidenav-trigger" data-target="slide-out">
           <span class="burger__line"></span>
           <span class="burger__line"></span>
           <span class="burger__line"></span>
-        </button>
+        </a>
       </div>
       <h1 class="main__title_h1">Реализуем крупнейшие проекты в России</h1>
       <h4 class="main__title_h4">Стадионы, газопроводы, мосты, дамбы</h4>
@@ -27,7 +42,7 @@
   </header>
   <section class="about">
     <div class="info">
-      <div class="container">
+      <div class="container_V">
         <div class="about__grid">
           <div class="about__grid_item">
             <h4 class="about__h4">26</h4>
@@ -52,7 +67,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container_V">
       <h2 class="text_h2 project_h2">Наши самые большие проекты</h2>
       <div class="about__flex">
         <div class="about__flex_item">
@@ -77,7 +92,7 @@
     </div>
   </section>
   <section class="request">
-    <div class="container">
+    <div class="container_V">
       <div class="request__flex">
         <div class="request__flex_left">
           <h4 class="request__h4">Самые умные проекты</h4>
@@ -93,7 +108,7 @@
     </div>
   </section>
   <section class="services">
-    <div class="container">
+    <div class="container_V">
       <h2 class="text_h2 section__h2">Чем мы занимаемся?</h2>
       <div class="services__grid">
         <div class="services__grid_item">
@@ -152,7 +167,7 @@
     </div>
   </section>
   <section class="question">
-    <div class="container">
+    <div class="container_V">
       <h2 class="text_h2 section__h2">Ответы на вопросы</h2>
       <div class="question__items">
         <details class="question_item">
@@ -175,7 +190,7 @@
     </div>
   </section>
   <section class="partners">
-    <div class="container">
+    <div class="container_V">
       <h2 class="text_h2 partners__h2">Наши партнеры</h2>
       <div class="partners__flex">
         <div class="partners__item">
@@ -197,7 +212,7 @@
     </div>
   </section>
   <section class="reviews">
-    <div class="container">
+    <div class="container_V">
       <h2 class="text_h2 reviews__h2">Отзывы о работе с нами</h2>
       <div class="reviews__grid">
         <div class="reviews__grid_item">
@@ -225,7 +240,7 @@
     </div>
   </section>
   <section class="request">
-    <div class="container">
+    <div class="container_V">
       <div class="request__flex">
         <div class="request__flex_left">
           <h4 class="request__h4">Хотите с нами работать?</h4>
@@ -241,7 +256,7 @@
     </div>
   </section>
   <section class="contacts">
-    <div class="container">
+    <div class="container_V">
       <h2 class="text_h2 contacts__h2">Контакты</h2>
       <div class="contacts__grid">
         <div class="contacts__item">
@@ -270,12 +285,14 @@
     </div>
   </section>
   <footer class="footer">
-    <div class="container">
+    <div class="container_V">
       <div class="footer__flex">
         <p class="text_p footer__copyright">&copy; 2019 Строительная компания</p>
         <p class="text_p footer__brand">Разработано лучшей студеей</p>
       </div>
     </div>
   </footer>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
