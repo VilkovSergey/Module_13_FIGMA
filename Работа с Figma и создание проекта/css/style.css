@@ -293,6 +293,8 @@ Start section_request */
   border: none;
   font-family: 'Oswald', sans-serif;
   background-color: #fff;
+  text-decoration: none;
+  color: #000;
   cursor: pointer;
   display: flex;
   align-items: center;
